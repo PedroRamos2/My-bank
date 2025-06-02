@@ -12,16 +12,16 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 20px
+    padding: 50px
 }
 
 /* Área de manutenção */
 #manutencao {
     color: white;
     font-style: italic;
-    margin-bottom: 30px;
     max-width: 600px;
     display: block;
+    margin-right: 30px;
 }
 
 #manutencao h1 {

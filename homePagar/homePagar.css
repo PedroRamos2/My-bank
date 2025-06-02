@@ -14,8 +14,7 @@ header {
 
 header h1 {
     font-size: 25px;
-    position: relative;
-    right: 22%;
+    margin: auto;
 }
 
 .pagar {

@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
+/* Área de manutenção */
+#manutencao {
+    color: white;
+    font-style: italic;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+#manutencao h1 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.700);
+}
+
+#manutencao ul {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#manutencao ul li {
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
 /* Cabeçalho */
 .header {
     display: flex;

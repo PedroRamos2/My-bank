@@ -17,8 +17,7 @@ header p1 {
     font-size: 20px;
     font-weight: bold;
     color: #333;
-    position: relative;
-    right: 45%;
+    margin: auto;
 }
 
 /* Botões */
@@ -47,7 +46,7 @@ input[type='button'] {
 
 /* Responsividade extra (opcional para dispositivos menores) */
 @media (max-width: 400px) {
-    #tituloPix {
+    header {
         font-size: 18px;
     }
 

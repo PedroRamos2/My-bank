@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Banco Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="manutencao">
+        <ul>
+            <li><h1>Site em manutenção</h1></li>
+            <li>Próximas atualizações:</li>
+            <li>- Melhorias na interface do Pix</li>
+            <li>- Novos recursos no Cartão</li>
+            <li>- Comprovantes de transações</li>
+            <li>- Notificações de pagamentos</li>
+        </ul>
+        <picture>
+            <source media="(max-width: 650)" srcset="imagens/manutencao-650.png" type="image/png">
+            <source media="(max-width: 950px)" srcset="../imagens/manutencao-950.png" type="image/png">
+            <img src="../imagens/manutencao-fullhd.png" alt="Imagem Flexivel">
+        </picture>
+    </div>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <img src="../imagens/android70.png" alt="">
+            </div>
+            <div class="user-info">
+                <span>Bem-vindo, <strong>Pedro Ramos</strong></span>
+            </div>
+        </header>
+
+        <div class="balance-section">
+            <h2>Saldo Atual</h2>
+            <div class="balance">
+                <h3><span id="saldo">800,00</span></h3>
+                <div id="extrato" onclick="historico()">Ver extrato <p>&gt;</p></div>
+            </div>
+            <div id="botoes">
+                <input type="button" value="Pix" onclick="pix()">
+                <input type="button" value="Cartão" onclick="cartao()">
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="action">
+                <label for="deposito">Depósito</label>
+                <input type="number" id="deposito" placeholder="Valor para depósito">
+                <button onclick="depositar()">Depositar</button>
+            </div>
+        </div>
+
+        <div class="message" id="message"></div>
+
+        <footer><p>&copy; Pedro Ramos</p></footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* Reset de estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(105, 105, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.400);
+    padding: 20px;
+    margin: auto;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    padding-top: 10px;
+    font-weight: bold;
+}

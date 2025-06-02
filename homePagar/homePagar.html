@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/fundo.css">
+    <link rel="stylesheet" href="homePagar.css">
+    <script src="homepagar.js"></script>
+    <title>Home Pagar</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p><a href="../Pix/pix.html" rel="prev"><img src="../imagens/voltar.png" alt="" width="30"></a></p>
+            <h1>Pagar com Pix</h1>
+        </header>
+        <div class="pagar">
+            <h2>Para quem você quer pagar?</h2>
+            <input type="number" name="numero" id="num" placeholder="CPF ou Celular">
+            <button onclick="pagar()">Pagar</button>
+            <div id="res" style="color: red;"></div>
+        </div>
+        <div class="favoritos">
+            <h2>Favoritos</h2>
+            <div id="fav1"> 
+                <h3>
+                    Ramos
+                    <p><a href="Pagar/pagar.html"><img src="../imagens/setaDireita.png" width="30px"></a></p>
+                </h3>
+                <p>Pedro Henrique de Jesus Ramos</p>
+                <p>565.822.338-58</p>
+            </div>
+            <hr>
+            <div id="fav2">
+                <h3>
+                    Milena 
+                    <p><a href="Pagar/pagar.html"><img src="../imagens/setaDireita.png" width="30px"></a></p>
+                </h3>
+                <p>Milena de Jesus Ramos</p>
+                <p>(11) 99917-6460</p>
+            </div>
+        </div>
+        <footer>&copy; Pedro Ramos</footer>
+    </div>
+</body>
+</html>

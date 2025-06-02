@@ -1,0 +1,58 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho Pix */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header p1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    right: 45%;
+}
+
+/* Botões */
+input[type='button'] {
+    background-color: #ffffff;
+    color: black;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Imagem */
+#imagem {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#imagem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsividade extra (opcional para dispositivos menores) */
+@media (max-width: 400px) {
+    #tituloPix {
+        font-size: 18px;
+    }
+
+    input[type='button'] {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

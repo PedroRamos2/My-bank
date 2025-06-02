@@ -1,0 +1,94 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 25px;
+    position: relative;
+    right: 22%;
+}
+
+.pagar {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    font-size: 15px;
+    margin: 10px 3px 10px 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 3px 5px 3px 5px;
+    outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+button {
+    padding: 6px 1px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    width: 15%;
+    transition: all ease 0.3s;
+}
+
+button:hover {
+background-color: #3c8d3e;
+}
+
+
+.favoritos {
+    font-size: 14px;
+    text-align: left;
+}
+
+#fav1, #fav2 {
+    margin: 10px 0;
+    background-color: #e6e3e344;
+    border-radius: 8px;
+}
+
+.favoritos h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+h3 p {
+    position: relative;
+    top: 20px;
+    padding-right: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    position: relative;
+    top: 5px;
+}
+

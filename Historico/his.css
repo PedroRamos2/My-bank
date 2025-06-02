@@ -1,0 +1,127 @@
+/* Reset de estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho do historico */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-left: 20px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Saldo */
+.saldo-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.saldo-container h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.saldo {
+    font-size: 2em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Ações */
+.acoes {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.btn-limpar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-limpar:hover {
+    background-color: #c82333;
+}
+
+/* Lista de Transações */
+#transacoes-lista {
+    margin: 20px 0;
+}
+
+.transacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.transacao:last-child {
+    border-bottom: none;
+}
+
+.transacao-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.tipo {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Cores dos valores por tipo de transação */
+.valor-deposito {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.valor-pagamento {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.sem-transacoes {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}

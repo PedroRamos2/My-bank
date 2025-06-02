@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/fundo.css">
+    <link rel="stylesheet" href="his.css">
+    <title>Histórico</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p><a href="../Home/home.html" rel="prev"><img src="../imagens/voltar.png" width="30"></a></p>
+            <h1>Histórico de Transações</h1>
+        </header>
+
+        <div class="saldo-container">
+            <h2>Saldo Atual</h2>
+            <div class="saldo" id="saldoAtual">R$ 0,00</div>
+        </div>
+
+        <!--<div class="acoes">
+            <button onclick="limparHistorico()" class="btn-limpar">Limpar Histórico</button>
+        </div>-->
+
+        <div id="transacoes-lista">
+            <!-- As transações serão inseridas aqui via JavaScript -->
+        </div>
+
+        <footer>&copy; Pedro Ramos</footer>
+    </div>
+    <script src="hist.js"></script>
+</body>
+</html>

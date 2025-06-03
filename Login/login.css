@@ -2,29 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Área de manutenção */
-#manutencao {
-    color: white;
-    font-style: italic;
-    max-width: 600px;
-    display: block;
-    margin: auto;
-}
-
-#manutencao h1 {
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.700);
-}
-
-#manutencao ul {
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-#manutencao ul li {
-    margin-top: 8px;
-    margin-right: 20px;
+    font-family: Arial, sans-serif;
 }
 
 /* Cabeçalho */
@@ -49,73 +27,118 @@
     text-shadow: 2px 2px 10px #2e6d3177;
 }
 
-/* Campos de entrada */
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
+.form-container {
+    margin-top: 1rem;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.eye-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+
+.toggle-password:hover .eye-icon {
+    opacity: 1;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
-    outline: 0;
-    box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.200);
+    transition: border-color 0.3s;
+    width: 100%;
 }
 
-#senha {
-    color: #4caf50;
-    margin-top: 15px;
-    text-align: left;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px #2e6d3177;
+input[type="password"] {
+    padding-right: 40px;
 }
 
-input::placeholder {
-    color: gray;
-    font-style: italic;
+input:focus {
+    outline: none;
+    border-color: #1a73e8;
 }
 
-/* Botão */
-input[type="button"] {
-    padding: 10px 24px;
-    background-color: #4caf50;
+input.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    min-height: 16px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
     color: white;
+    padding: 12px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 20px;
     font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 0.5rem;
     width: 100%;
 }
 
-input[type="button"]:hover {
+button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Mensagens de erro */
-#mensagemErro,
-#senhaErro {
-    color: #ff4d4d;
-    margin-top: 10px;
-    display: none;
-    font-size: 14px;
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
-/* Rodapé */
-footer {
-    padding-top: 20px;
+p {
+    text-align: center;
+    margin-top: 1rem;
+    color: #666;
 }
 
-/* Responsividade extra (opcional) */
-@media (max-width: 400px) {
-    #user-info {
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+a:hover {
+    text-decoration: underline;
+} 

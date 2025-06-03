@@ -73,3 +73,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Atualizar saldo a cada 2 segundos para manter sincronizado
 setInterval(atualizarSaldo, 2000);
+
+// Check if user is logged in
+document.addEventListener('DOMContentLoaded', () => {
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+    if (!usuarioLogado) {
+        window.location.href = '../login/login.html';
+        return;
+    }
+
+    document.getElementById('nomeUsuario').textContent = usuarioLogado.nomeCompleto;
+});
+
+// Logout function
+function logout() {
+    localStorage.removeItem('usuarioLogado');
+    window.location.href = '../login/login.html';
+}

@@ -23,16 +23,21 @@
             <img src="../imagens/manutencao-fullhd.png" alt="Imagem Flexivel">
         </picture>
     </div>
-
+    
     <div class="app-container">
+        <div class="sair">
+            <button id="sairBtn" onclick="logout()" class="logout-btn">Sair</button>
+        </div>
+        
         <header class="app-header">
             <div class="logo">
                 <img src="../imagens/android70.png" alt="">
             </div>
             <div class="user-info">
-                <span>Bem-vindo, <strong>Pedro Ramos</strong></span>
+                <span>Bem-vindo, <strong id="nomeUsuario"></strong></span>
             </div>
         </header>
+        
 
         <div class="balance-section">
             <h2>Saldo Atual</h2>
@@ -50,7 +55,7 @@
             <div class="action">
                 <label for="deposito">Depósito</label>
                 <input type="number" id="deposito" placeholder="Valor para depósito">
-                <button onclick="depositar()">Depositar</button>
+                <button class="depositar" onclick="depositar()">Depositar</button>
             </div>
         </div>
 

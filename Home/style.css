@@ -77,6 +77,23 @@ body {
     box-shadow: 1px 1px 10px #58585870;
 }
 
+/* Botão de Sair */
+.sair {
+    text-align: right;
+}
+
+#sairBtn {
+    width: 12%;
+    padding: 4px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 /* Saldo */
 .balance-section h2 {
     color: #555;
@@ -157,7 +174,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-button {
+.depositar {
     width: 100%;
     padding: 14px;
     background-color: #4CAF50;

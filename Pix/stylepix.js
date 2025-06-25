@@ -1,5 +1,5 @@
 function pagar() {
-    location.href = '../Paginas/homePagar.html'
+    location.href = '../Paginas/homepagar.html'
 }
 
 function copiaCola() {

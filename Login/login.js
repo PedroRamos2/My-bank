@@ -290,7 +290,7 @@ function fazerLogin(event) {
         // Remove senha before storing in localStorage
         const { senha, ...usuarioSemSenha } = usuario;
         localStorage.setItem('usuarioLogado', JSON.stringify(usuarioSemSenha));
-        window.location.href = '../Paginas/home.html';
+        window.location.href = '../Home/home.html';
     } else {
         document.getElementById('loginIdentifierError').textContent = 'Usuário ou senha incorretos';
         document.getElementById('loginIdentifier').classList.add('error');

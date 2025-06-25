@@ -65,7 +65,7 @@ function realizarPagamento() {
     salvarNoHistorico(valor, 'Pagamento');
     
     alert('Pagamento realizado com sucesso!');
-    window.location.href = '../../Paginas/home.html';
+    window.location.href = '../Home/home.html';
 }
 
 // Atualizar saldo quando a página carregar

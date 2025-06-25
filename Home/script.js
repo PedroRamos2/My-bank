@@ -78,7 +78,7 @@ setInterval(atualizarSaldo, 2000);
 document.addEventListener('DOMContentLoaded', () => {
     const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
     if (!usuarioLogado) {
-        window.location.href = '../login/login.html';
+        window.location.href = '../login/index.html';
         return;
     }
 
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Logout function
 function logout() {
     localStorage.removeItem('usuarioLogado');
-    window.location.href = '../Paginas/login.html';
+    window.location.href = '../login/index.html';
 }
 
 function toggleSaldo() {

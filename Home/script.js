@@ -23,17 +23,17 @@ function salvarSaldo(novoSaldo) {
 
 //Botão do Pix
 function pix() {
-    location.href = '../Pix/pix.html'
+    location.href = '../Paginas/pix.html'
 }
 
 //Botão do cartão
 function cartao() {
-    location.href = '../Cartao/cartao.html'
+    location.href = '../Paginas/cartao.html'
 }
 
 //Botão do histórico
 function historico(){
-    location.href = '../Historico/his.html'
+    location.href = '../Paginas/his.html'
 }
 
 // Função para depositar dinheiro
@@ -88,5 +88,19 @@ document.addEventListener('DOMContentLoaded', () => {
 // Logout function
 function logout() {
     localStorage.removeItem('usuarioLogado');
-    window.location.href = '../login/login.html';
+    window.location.href = '../Paginas/login.html';
+}
+
+function toggleSaldo() {
+    const saldoElement = document.getElementById('saldo');
+    const toggleBtn = document.getElementById('toggleSaldo');
+    const img = toggleBtn.querySelector('img');
+    
+    if (saldoElement.style.visibility === 'hidden') {
+        saldoElement.style.visibility = 'visible';
+        img.style.opacity = '1';
+    } else {
+        saldoElement.style.visibility = 'hidden';
+        img.style.opacity = '0.5';
+    }
 }

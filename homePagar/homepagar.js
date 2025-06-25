@@ -5,6 +5,6 @@ function pagar() {
     if(num.value.length == 0){
         res.innerHTML = 'CPF ou Número Inválido!'
     }else {
-        location.href = 'Pagar/pagar.html'
+        location.href = '../Paginas/pagar.html'
     }
 }

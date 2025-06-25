@@ -1,7 +1,7 @@
 function pagar() {
-    location.href = '../homePagar/homePagar.html'
+    location.href = '../Paginas/homePagar.html'
 }
 
 function copiaCola() {
-    location.href = '../CopiaCola/copiaCola.html'
+    location.href = '../Paginas/copiaCola.html'
 }

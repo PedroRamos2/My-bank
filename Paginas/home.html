@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <title>Banco Virtual</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Home/style.css">
 </head>
 <body>
     <div id="manutencao">
@@ -18,7 +18,7 @@
             <li>- Notificações de pagamentos</li>
         </ul>
         <picture>
-            <source media="(max-width: 650)" srcset="imagens/manutencao-650.png" type="image/png">
+            <source media="(max-width: 650)" srcset="../imagens/manutencao-650.png" type="image/png">
             <source media="(max-width: 950px)" srcset="../imagens/manutencao-950.png" type="image/png">
             <img src="../imagens/manutencao-fullhd.png" alt="Imagem Flexivel">
         </picture>
@@ -43,6 +43,7 @@
             <h2>Saldo Atual</h2>
             <div class="balance">
                 <h3><span id="saldo">800,00</span></h3>
+                <p id="toggleSaldo" onclick="toggleSaldo()" class="toggle-btn"><img src="../imagens/esconderSenha.png" alt="Toggle Saldo" width="20"></p>
                 <div id="extrato" onclick="historico()">Ver extrato <p>&gt;</p></div>
             </div>
             <div id="botoes">
@@ -64,6 +65,6 @@
         <footer><p>&copy; Pedro Ramos</p></footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../Home/script.js"></script>
 </body>
 </html>

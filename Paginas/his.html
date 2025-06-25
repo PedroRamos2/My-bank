@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/fundo.css">
-    <link rel="stylesheet" href="his.css">
+    <link rel="stylesheet" href="../Historico/his.css">
     <title>Histórico</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <p><a href="../Home/home.html" rel="prev"><img src="../imagens/voltar.png" width="30"></a></p>
+            <p><a href="../Paginas/home.html" rel="prev"><img src="../imagens/voltar.png" width="30"></a></p>
             <h1>Histórico de Transações</h1>
         </header>
 
         <div class="saldo-container">
             <h2>Saldo Atual</h2>
-            <div class="saldo" id="saldoAtual">R$ 0,00</div>
+            <div class="saldo-wrapper">
+                <div class="saldo" id="saldoAtual">R$ 0,00</div>
+                <button id="toggleSaldo" onclick="toggleSaldo()" class="toggle-btn"><img src="../imagens/esconderSenha.png" alt="Toggle Saldo" width="20"></button>
+            </div>
         </div>
 
         <!--<div class="acoes">
@@ -30,6 +33,6 @@
 
         <footer>&copy; Pedro Ramos</footer>
     </div>
-    <script src="hist.js"></script>
+    <script src="../Paginas/hist.js"></script>
 </body>
 </html>

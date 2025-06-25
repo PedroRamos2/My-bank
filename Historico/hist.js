@@ -56,6 +56,20 @@ function carregarTransacoes() {
     transacoesLista.innerHTML = transacoesHTML;
 }
 
+function toggleSaldo() {
+    const saldoElement = document.getElementById('saldoAtual');
+    const toggleBtn = document.getElementById('toggleSaldo');
+    const img = toggleBtn.querySelector('img');
+    
+    if (saldoElement.style.visibility === 'hidden') {
+        saldoElement.style.visibility = 'visible';
+        img.style.opacity = '1';
+    } else {
+        saldoElement.style.visibility = 'hidden';
+        img.style.opacity = '0.5';
+    }
+}
+
 // Inicializar a página
 document.addEventListener('DOMContentLoaded', () => {
     carregarTransacoes();

@@ -65,7 +65,7 @@ function realizarPagamento() {
     salvarNoHistorico(valor, 'Pagamento');
     
     alert('Pagamento realizado com sucesso!');
-    window.location.href = '../../Home/home.html';
+    window.location.href = '../../Paginas/home.html';
 }
 
 // Atualizar saldo quando a página carregar
@@ -74,4 +74,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Atualizar saldo a cada 2 segundos para manter sincronizado
-setInterval(atualizarSaldo, 2000); 
+setInterval(atualizarSaldo, 2000);
+
+function toggleSaldo() {
+    const saldoElement = document.getElementById('valorDoSaldo');
+    const toggleBtn = document.getElementById('toggleSaldo');
+    const img = toggleBtn.querySelector('img');
+    
+    if (saldoElement.style.visibility === 'hidden') {
+        saldoElement.style.visibility = 'visible';
+        img.style.opacity = '1';
+    } else {
+        saldoElement.style.visibility = 'hidden';
+        img.style.opacity = '0.5';
+    }
+} 

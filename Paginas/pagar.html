@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../CSS/fundo.css">
-    <link rel="stylesheet" href="pagar.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/fundo.css">
+    <link rel="stylesheet" href="../homePagar/Pagar/pagar.css">
     <title>Pagar</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <p><a href="../homePagar.html" rel="prev"><img src="../../imagens/voltar.png" width="30"></a></p>
+            <p><a href="../Paginas/homePagar.html" rel="prev"><img src="../imagens/voltar.png" width="30"></a></p>
             <h1>Valor a Pagar</h1>
         </header>
 
         <div class="saldo">
-            <button>Saldo em conta <p id="valorDoSaldo">R$ 800,00</p></button>
+            <button>Saldo em conta <p id="valorDoSaldo">R$ 800,00</p><p id="toggleSaldo" onclick="toggleSaldo()" class="toggle-btn"><img src="../imagens/esconderSenha.png" alt="Toggle Saldo" width="16"></p></button>
         </div>
 
         <div class="pagamento">
@@ -29,6 +29,6 @@
 
         <footer>&copy; Pedro Ramos</footer>
     </div>
-    <script src="pagar.js"></script>
+    <script src="../homePagar/Pagar/pagar.js"></script>
 </body>
 </html>
